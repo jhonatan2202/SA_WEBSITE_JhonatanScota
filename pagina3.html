@@ -1,67 +1,114 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summer Beats Festival</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Summer Beats Festival</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
     <header>
-      <h1>Summer Beats Festival</h1>
-      <h2>Músicas e momentos inesqueciveis para viver o seu verão</h2>
-      <br />
-      <nav>
-        <h3>Menu:</h3>
-        <button><a href="index.html">Home</a></button>
-        <button><a href="pagina2.html">Programação</a></button>
-        <button><a href="pagina3.html">Galeria de Momentos</a></button>
-        <button><a href="contato.html">Contato</a></button>
-      </nav>
+        <h1>Summer Beats Festival</h1>
+        <h2>
+            Músicas e momentos inesquecíveis para viver o seu verão
+        </h2>
+        <br>
+        <nav>
+            <h3>Menu:</h3>
+            <button>
+                <a href="index.html">
+                    <span class="material-icons">home</span>
+                    Home
+                </a>
+            </button>
+            <button>
+                <a href="pagina2.html">
+                    <span class="material-icons">event</span>
+                    Programação
+                </a>
+            </button>
+            <button>
+                <a href="pagina3.html">
+                    <span class="material-icons">photo_library</span>
+                    Galeria de Momentos
+                </a>
+            </button>
+            <button>
+                <a href="contato.html">
+                    <span class="material-icons">mail</span>
+                    Contato
+                </a>
+            </button>
+        </nav>
     </header>
-
     <main>
-      <br />
-      <br />
-      <section class="galeria">
-        <h1>Galeria de Momentos</h1>
-        <h2>Imagens de momentos únicos no summer beats festival</h2>
-        <h3>Luan Santana chamando as atenções do público</h3>
-        <img
-          src="imagens/luan-santana-imagem.png"
-          alt="Luan Santana cantando"
-          width="300px"
-          height="200px"
-        />
-        <p>
-          Luan Santana anima o público do Summer Beats Festival com uma
-          apresentação cheia de grandes sucessos.
-        </p>
-        <br />
-        <h3>Gusttavo lima no palco</h3>
-        <img
-          src="imagens/gusttavo-lima-imagem.png"
-          alt="Gusttavo Lima no palco"
-          width="300px"
-          height="200px"
-        />
-        <p>
-          Um dos momentos mais animados do festival, com Gusttavo Lima reunindo
-          o público para cantar seus grandes hits.
-        </p>
-        <br />
-        <h3>Henrique & Juliano no Summer Beats</h3>
-        <img
-          src="imagens/henrique-juliano-imagem.png"
-          alt="Henrique e Juliano se apresentando"
-          width="300px"
-          height="200px"
-        />
-        <p>
-          Henrique & Juliano encerram a programação com um show especial,
-          criando um momento inesquecível para o público.
-        </p>
-      </section>
+        <section class="galeria">
+            <h1>Galeria de Momentos</h1>
+            <h2>
+                Imagens de momentos únicos no Summer Beats Festival
+            </h2>
+            <div class="cases-container">
+                <div class="case-card">
+                    <img
+                        src="imagens/luan-santana-imagem.png"
+                        alt="Luan Santana cantando"
+                    >
+                    <h3>
+                        Luan Santana chamando as atenções do público
+                    </h3>
+                    <p>
+                        Luan Santana anima o público do Summer Beats Festival
+                        com uma apresentação cheia de grandes sucessos.
+                    </p>
+                </div>
+                <div class="case-card">
+                    <img
+                        src="imagens/gusttavo-lima-imagem.png"
+                        alt="Gusttavo Lima no palco"
+                    >
+                    <h3>
+                        Gusttavo Lima no palco
+                    </h3>
+                    <p>
+                        Um dos momentos mais animados do festival, com
+                        Gusttavo Lima reunindo o público para cantar seus
+                        grandes hits.
+                    </p>
+                </div>
+                <div class="case-card">
+                    <img
+                        src="imagens/henrique-juliano-imagem.png"
+                        alt="Henrique e Juliano se apresentando"
+                    >
+                    <h3>
+                        Henrique & Juliano no Summer Beats
+                    </h3>
+                    <p>
+                        Henrique & Juliano encerram a programação com um show
+                        especial, criando um momento inesquecível para o público.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+    <footer id="rodape">
+        <p>
+            <span class="material-icons">email</span>
+            E-mail: joseprofissional@profissional.com
+        </p>
+        <p>
+            <span class="material-icons">phone</span>
+            Telefone: 27003000390
+        </p>
+        <p>
+            <span class="material-icons">calendar_today</span>
+            Ano: 2026
+        </p>
+    </footer>
+    <a href="contato.html" class="botao-contato-fixo">
+        <span class="material-icons">chat</span>
+        Contato
+    </a>
+</body>
 </html>

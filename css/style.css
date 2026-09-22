@@ -1,27 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
     font-family: 'Inter', Arial, sans-serif;
     background-color: #f5f5f5;
     color: #222222;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 50px 30px;
+    width: auto;
+    margin: 0;
+    padding: 50px 25px;
+    flex: 1;
 }
 
 section {
@@ -29,68 +22,49 @@ section {
 }
 
 h1 {
-    color: #1f2933;
+    color: #3a174d;
     font-size: 30px;
     margin-bottom: 25px;
 }
 
 h2 {
-    color: #333333;
+    color: #6b5b73;
     font-size: 22px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #333333;
+    color: #3a174d;
 }
 
 p {
     margin-bottom: 18px;
 }
 
-
-/* =========================================================
-   CABEÇALHO
-   ========================================================= */
-
 header {
     background-color: #ffffff;
-    border-bottom: 1px solid #dddddd;
-    padding: 20px 30px;
+    border-bottom: 2px solid #d81b72;
+    padding: 25px 30px;
 }
 
 header h1 {
-    color: #1f2933;
+    color: #3a174d;
     font-size: 28px;
     margin-bottom: 3px;
 }
 
 header h2 {
-    color: #666666;
+    color: #6b5b73;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-
-header img {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 15px auto;
-}
-
-
-/* =========================================================
-   MENU - FLEXBOX
-   ========================================================= */
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 nav h3 {
@@ -104,29 +78,37 @@ nav button {
 }
 
 nav a {
-    color: #222222;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3a174d;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #087ff5;
+    color: #d81b72;
 }
 
-
-/* =========================================================
-   HOME
-   ========================================================= */
+.material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+}
 
 .apresentacao {
-    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.apresentacao p {
+    width: 100%;
 }
 
 .informacoes-evento {
+    width: 100%;
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 6px;
+    margin-bottom: 40px;
 }
 
 .informacoes-evento ul {
@@ -136,11 +118,6 @@ nav a:hover {
 .informacoes-evento li {
     margin-bottom: 10px;
 }
-
-
-/* =========================================================
-   PÁGINA DE SERVIÇOS
-   ========================================================= */
 
 .programacao {
     width: 100%;
@@ -155,7 +132,7 @@ nav a:hover {
 }
 
 .tabela-programacao th {
-    background-color: #333333;
+    background-color: #3a174d;
     color: #ffffff;
     padding: 15px;
     text-align: left;
@@ -166,15 +143,10 @@ nav a:hover {
     border-bottom: 1px solid #dddddd;
 }
 
+
 .tabela-programacao tr:hover {
-    background-color: #eeeeee;
+    background-color: #f8e4ef;
 }
-
-
-/* =========================================================
-   PÁGINA DE CASES
-   GRID
-   ========================================================= */
 
 .galeria {
     width: 100%;
@@ -188,54 +160,34 @@ nav a:hover {
 }
 
 .case-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 20px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.case-card:hover {
-    transform: translateY(-4px);
 }
 
 .case-card img {
     width: 100%;
-    max-width: 300px;
-    height: 200px;
-    object-fit: cover;
+    height: 400px;
     border-radius: 5px;
     margin-bottom: 18px;
 }
 
 .case-card h3 {
-    width: 100%;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 .case-card p {
-    width: 100%;
     color: #555555;
 }
 
-
-/* =========================================================
-   FORMULÁRIO DE CONTATO
-   ========================================================= */
-
-#contato {
-    width: 100%;
-}
-
 .contato-container {
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 .formulario {
     width: 100%;
@@ -243,166 +195,87 @@ nav a:hover {
     margin: 0 auto;
 }
 
+
 .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
 }
 
+
 .form-group label {
     font-weight: 600;
     margin-bottom: 8px;
+    color: #3a174d;
 }
+
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 95%;
     border: 1px solid #d5d5d5;
-    border-radius: 4px;
-    padding: 12px;
+    border-radius: 10px;
+    padding: 15px;
     font-family: 'Inter', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     background-color: #ffffff;
 }
 
+
 .form-group input {
-    height: 42px;
+    height: 40px;
 }
+
 
 .form-group textarea {
-    min-height: 130px;
-    resize: vertical;
+    min-height: 100px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #087ff5;
-}
 
 .botao-enviar {
     width: 100%;
     border: none;
-    border-radius: 4px;
-    padding: 13px;
-    background-color: #087ff5;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #d81b72;
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
 }
+
 
 .botao-enviar:hover {
-    background-color: #0669cc;
+    background-color: #a91559;
 }
-
-
-/* =========================================================
-   BOTÃO FIXO - POSITION
-   ========================================================= */
 
 .botao-contato-fixo {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #087ff5;
+    background-color: #d81b72;
     color: #ffffff;
     text-decoration: none;
     padding: 12px 18px;
     border-radius: 5px;
     font-weight: 600;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+.botao-contato-fixo:hover {
+    background-color: #a91559;
+}
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-    background-color: #333333;
+#rodape {
+    background-color: #291333;
     color: #ffffff;
     text-align: center;
     padding: 35px 20px;
     margin-top: 40px;
 }
 
-footer p {
+#rodape p {
     margin-bottom: 8px;
 }
 
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-/* =========================================================
-   RESPONSIVIDADE
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .cases-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    header {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    nav {
-        justify-content: center;
-    }
-
-    main {
-        padding: 35px 20px;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
-
-    .tabela-programacao {
-        display: block;
-        overflow-x: auto;
-    }
-
-    .formulario {
-        max-width: 100%;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .cases-container {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 2px;
-    }
-
-    nav button {
-        width: 100%;
-    }
-
-    header img {
-        max-width: 100%;
-    }
-
-    main {
-        padding: 25px 15px;
-    }
-
+#rodape .material-icons {
+    font-size: 18px;
 }
